@@ -1,0 +1,42 @@
+*:focus {
+  outline: none;
+}
+
+body {
+  margin: 4rem;
+  font-family: 'Avenir', sans-serif;
+}
+
+mark {
+  padding: 0 0.4rem;
+  background-color: #fbb444;
+}
+
+form {
+  margin-top: 2rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+input {
+  padding: .6rem 1rem;
+  border: 0;
+  background-color: teal;
+  color: white;
+  font-size: .9rem;
+}
+
+button {
+  margin-top: 2rem;
+  padding: .8rem 1.4rem;
+  border: 0;
+  background-color: black;
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}

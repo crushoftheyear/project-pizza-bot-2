@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Pizza Bot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Pizza Bot 🍕</h1>
+  <h2 id="message"></h2>
+
+  <form id="orderForm">
+
+    <label name="Pizza type">
+      What pizza do you want?
+      <input id="pizzaTypeChoice" type="text" required>
+    </label>
+
+    <label name="Pizza quantity">
+      And how many?
+      <input id="pizzaQuantityChoice" type="number" value="1" min="1" max="10" required>
+    </label>
+
+    <!-- <label>
+      What pizza do you want?<br>
+      <input class="selectPizza" type="radio" name="pizza" value="vegetarian"> Vegetarian<br>
+      <input class="selectPizza" type="radio" name="pizza" value="hawaiian"> Hawaiian<br>
+      <input class="selectPizza" type="radio" name="pizza" value="pepperoni"> Pepperoni<br>
+    </label> -->
+
+    <button id="orderButton">Order</button>
+
+  </form>
+
+  <script src="pizzabot.js"></script>
+</body>
+
+
+</html>
