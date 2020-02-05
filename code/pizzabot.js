@@ -4,8 +4,8 @@ const pepperoni = "Pepperoni Pizza";
 const pizzaMenu = [vegetarian, hawaiian, pepperoni];
 const pizzaPrice = 80;
 
-const orderButton = document.getElementById("orderButton");
-let messageBox = document.getElementById("message");
+const orderButton = document.querySelector("#orderButton");
+let messageBox = document.querySelector("#message");
 
 
 messageBox.innerHTML = `Hey! Happy to serve your pizza. On our menu we have <mark>${vegetarian}</mark>, <mark>${hawaiian}</mark> and <mark>${pepperoni}</mark>.`;
@@ -62,8 +62,8 @@ const cookingTime = (orderQuantity) => {
 
 // Runs when order button is clicked
 const buttonClicked = () => {
-  let orderName = document.getElementById("pizzaTypeChoice").value;
-  let orderQuantity = document.getElementById("pizzaQuantityChoice").value;
+  let orderName = document.querySelector("#pizzaTypeChoice").value;
+  let orderQuantity = document.querySelector("#pizzaQuantityChoice").value;
 
   if (checkOrderName(orderName) === true && orderQuantity < 11) {
 
@@ -71,7 +71,7 @@ const buttonClicked = () => {
     if (orderQuantity >= 2) orderName = `${orderName}s`;
 
     messageBox.innerHTML = `Great, I'll get started on your <mark>${orderName}</mark> right away, it will cost <mark>${totalCost(orderQuantity)} kr</mark>. Your pizza will take <mark>${cookingTime(orderQuantity)} minutes</mark> to prepare.`;
-    document.getElementById("orderForm").style.display = "none";
+    document.querySelector("#orderForm").style.display = "none";
   } else {
     messageBox.innerHTML = "Select a pizza from the menu & a number between 1 & 10";
   }
