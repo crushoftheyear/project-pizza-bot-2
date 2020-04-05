@@ -2,6 +2,6 @@
 
 The assignment was to create a text-based bot that orders pizza.
 
-### Deployed
+## Deployed
 
 https://project-pizza-bot.netlify.com/
